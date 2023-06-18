@@ -1,11 +1,11 @@
 # Password-Generator
 
-## This Week Task
+## This Week's Task
 
 This week's task was to modify the starter code to populate an online password generator application. 
 
 ## User Story
-Users of this password generator can use it to generate secure password to protect their sensitive data. The randomness of the generator will provide the users with greater security.
+Users of this password generator can use it to generate a secure password to protect their sensitive data. The randomness of the generator will provide the users with greater security.
 
 ## Acceptance Criteria
 GIVEN I need a new, secure password
