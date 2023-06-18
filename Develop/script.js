@@ -35,24 +35,38 @@ function generatePassword() {
   var specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-="; //noticed I can't include Back Slash
   
   var criteria = ""; //This stores the character types
+  var partialPassword =""; //partial password
 
   // If statements to add selected character types to the character set
   if (includeUppercase) {
     criteria += uppercaseChars;
+
+    var randomIndex = Math.floor(Math.random() * uppercaseChars.length);
+    partialPassword += uppercaseChars.charAt(randomIndex);
+
   }
   if (includeLowercase) {
     criteria += lowercaseChars;
+
+    var randomIndex = Math.floor(Math.random() * lowercaseChars.length);
+    partialPassword += lowercaseChars.charAt(randomIndex);
+
   }
   if (includeNumbers) {
     criteria += numberChars;
+
+    var randomIndex = Math.floor(Math.random() * numberChars.length);
+    partialPassword += numberChars.charAt(randomIndex);
   }
   if (includeSpecial) {
     criteria += specialChars;
+    var randomIndex = Math.floor(Math.random() * specialChars.length);
+    partialPassword += specialChars.charAt(randomIndex);
   }
 
   // The readonly area where the password is being displayed
-  var password = "";
-  for (var i = 0; i < length; i++) {
+  var password = partialPassword;
+  for (var i = 0; i < length - partialPassword.length; i++) {
     var randomIndex = Math.floor(Math.random() * criteria.length);
     password += criteria.charAt(randomIndex);
   }
