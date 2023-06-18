@@ -27,8 +27,10 @@ THEN the password is either displayed in an alert or written to the page
 ## Mock-up
 
 The following image shows the web application's appearance and functionality:
+![Screenshot 2023-06-18 at 12 31 35 PM](https://github.com/mohanbeckford/generator/assets/134114161/f7b11e61-e989-45a0-9fcc-f01cebe5f0e2)
+
 
 ![The Password Generator application displays a red button to "Generate Password".](./Assets/Screenshot_of_application.png)
 
 ## Live link
-https://mohanbeckford.github.io/password-generator/
+https://mohanbeckford.github.io/generator/
